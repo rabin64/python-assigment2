@@ -5,7 +5,16 @@
 #key parameter to sort by any field in the tuple, first name, last name,
 #or age.
 
-thistuple = ("f_name", "l_name", "age")
+tuple_1 = ('rabin', 'shrestha', 22)
 list_people = []
-list_people.append(thistuple)
+list_people.append(tuple_1)
+#print(list_people)
+tuple_2 = ('birendra', 'thapaliya', 22)
+tuple_3 = ('saroz', 'poudel', 22)
+tuple_4 = ('rupace', 'pandit', 22)
+list_people.append(tuple_2)
+list_people.append(tuple_3)
+list_people.append(tuple_4)
+sorted_list_people= sorted(list_people, key=lambda x: x[2] )
 print(list_people)
+print(sorted_list_people)
