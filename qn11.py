@@ -4,3 +4,8 @@
 #operations that will give the name without the extension. Does your
 #code work on filenames of arbitrary length?
 
+filename = 'example.txt'
+variable = ''
+if '.' in filename:
+    variable = filename[:-4]
+print("filename without extension:",variable)
